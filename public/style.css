@@ -148,6 +148,7 @@ html{
   object-fit: cover;      
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 5rem;
   transition: transform 0.4s ease; /
 }
 
@@ -159,7 +160,19 @@ html{
 .card {
   border-radius: 1.5rem;
   background: #1a1a1a;
+  border-bottom-right-radius: 5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards{
+  border-radius: 1.5rem;
+  background: #1a1a1a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transparent-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 

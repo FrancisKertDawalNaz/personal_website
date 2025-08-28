@@ -16,7 +16,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark transparent-navbar fixed-top">
         <div class="container">
             <a class="navbar-brand gradient-name" href="#">Francis.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -37,40 +37,58 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="text-center d-flex flex-column justify-content-center align-items-center" style="height: 100vh;"
-        id="home">
-        <h1 class="display-4" data-aos="fade-down" data-aos-delay="200">
-            <span class="text-white ">Hi, I'm</span>
-            <span class="fw-bold gradient-name">Francis Kert D. Naz</span>
-        </h1>
-        <h4 class="fw-light text-white-50" data-aos="fade-up" data-aos-delay="400">Full Stack Developer & UI/UX Designer
-        </h4>
-        <p class="mt-3 text-white-50" data-aos="fade-up" data-aos-delay="600">
-            Crafting digital experiences that blend beautiful design with powerful functionality.
-        </p>
-        <div class="mt-4 d-flex flex-column flex-md-row align-items-center gap-2" data-aos="zoom-in"
-            data-aos-delay="800">
-            <a href="#Projects" class="btn btn-work me-2">
-                <i class="bi bi-folder-fill me-2"></i> View My Work
-            </a>
-            <a href="#" class="btn btn-cv">
-                <i class="bi bi-file-earmark-arrow-down-fill me-2"></i> Download CV
-            </a>
-        </div>
-        <div class="mt-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="1000">
-            <a href="https://web.facebook.com/franciskertd.naz" target="_blank" class="social-icon me-3">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://github.com/FrancisKertDawalNaz" target="_blank" class="social-icon me-3">
-                <i class="bi bi-github"></i>
-            </a>
-            <a href="mailto:nfranciskert@gmail.com" class="social-icon me-3">
-                <i class="bi bi-envelope-fill"></i>
-            </a>
+    <section id="home" class="d-flex align-items-center" style="height: 100vh; background: #1a1a1a;">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side: Text -->
+                <div class="col-md-6 text-start" data-aos="fade-right" data-aos-delay="200">
+                    <h1 class="display-4">
+                        <span class="fw-bold gradient-name">Francis Kert D. Naz</span>
+                    </h1>
+                    <h4 class="fw-light text-white-50 mt-3" data-aos="fade-up" data-aos-delay="400">
+                        Web and Mobile Developer
+                    </h4>
+                    <p class="mt-3 text-white-50" data-aos="fade-up" data-aos-delay="600">
+                        Building responsive, user-friendly applications that bring ideas to life through innovation and
+                        technology.
+                    </p>
 
 
+                    <!-- Buttons -->
+                    <div class="mt-4 d-flex flex-column flex-md-row gap-2" data-aos="zoom-in" data-aos-delay="800">
+                        <a href="#Projects" class="btn btn-work me-2">
+                            <i class="bi bi-folder-fill me-2"></i> View My Work
+                        </a>
+                        <a href="#" class="btn btn-cv">
+                            <i class="bi bi-file-earmark-arrow-down-fill me-2"></i> Download CV
+                        </a>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="mt-4 d-flex" data-aos="fade-up" data-aos-delay="1000">
+                        <a href="https://web.facebook.com/franciskertd.naz" target="_blank" class="social-icon me-3">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://github.com/FrancisKertDawalNaz" target="_blank" class="social-icon me-3">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="mailto:nfranciskert@gmail.com" class="social-icon me-3">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Image -->
+                <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="400">
+                    <img src="naz1-removebg-preview.png" alt="Francis Kert Naz"
+                        class="img-fluid rounded-circle shadow-lg w-75">
+                </div>
+
+            </div>
         </div>
     </section>
+
 
     <section class="py-5" id="About">
         <div class="container">
@@ -115,18 +133,17 @@
     <section class="py-5" id="Projects">
         <div class="container">
             <h2 class="fw-bold gradient-name text-center mb-3">My Projects</h2>
-            <div class="row g-4">
+            <div class="row g-4" id="project-list">
 
                 <!-- Project 1 -->
-                <div class="col-md-4">
+                <div class="col-md-4 project-item">
                     <div class="card bg-dark text-white shadow-lg h-100" data-aos="fade-right">
                         <img src="PPT SMARTSCHED.jpg" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">SmartSched</h5>
                             <p class="card-text text-white-50">
                                 A web-based course scheduling system that uses a Constraint based Algorithm to automate
-                                and
-                                optimize class schedules.
+                                and optimize class schedules.
                             </p>
                             <a href="#" class="btn btn-sm btn-primary">
                                 <i class="bi bi-box-arrow-up-right me-1"></i> View Project
@@ -135,8 +152,8 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="col-md-4">
+                <!-- Project 2 -->
+                <div class="col-md-4 project-item">
                     <div class="card bg-dark text-white shadow-lg h-100" data-aos="fade-left">
                         <img src="p3.png" class="card-img-top" alt="Project 3">
                         <div class="card-body">
@@ -152,10 +169,10 @@
                     </div>
                 </div>
 
-                <!-- Project 1 -->
-                <div class="col-md-4">
+                <!-- Project 3 -->
+                <div class="col-md-4 project-item">
                     <div class="card bg-dark text-white shadow-lg h-100">
-                        <img src="../public/images/project1.png" class="card-img-top" alt="Project 1">
+                        <img src="p2.png" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">SmartSched</h5>
                             <p class="card-text text-white-50">
@@ -169,10 +186,10 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="col-md-4">
+                <!-- Project 4 -->
+                <div class="col-md-4 project-item">
                     <div class="card bg-dark text-white shadow-lg h-100">
-                        <img src="../public/images/project2.png" class="card-img-top" alt="Project 2">
+                        <img src="p1.png" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">EcoSort</h5>
                             <p class="card-text text-white-50">
@@ -186,10 +203,10 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="col-md-4">
+                <!-- Project 5 -->
+                <div class="col-md-4 project-item">
                     <div class="card bg-dark text-white shadow-lg h-100">
-                        <img src="../public/images/project3.png" class="card-img-top" alt="Project 3">
+                        <img src="p4.png" class="card-img-top" alt="Project 3">
                         <div class="card-body">
                             <h5 class="card-title">E-Commerce Website</h5>
                             <p class="card-text text-white-50">
@@ -202,74 +219,139 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-4 project-item">
+                    <div class="card bg-dark text-white shadow-lg h-100">
+                        <img src="p5.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Website</h5>
+                            <p class="card-text text-white-50">
+                                A Laravel-based online store with admin and user dashboards, product management, and
+                                secure checkout.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 (hidden at first) -->
+                <div class="col-md-4 project-item d-none">
+                    <div class="card bg-dark text-white shadow-lg h-100">
+                        <img src="p6.png" class="card-img-top" alt="Project 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Another Project</h5>
+                            <p class="card-text text-white-50">
+                                Extra project details here.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 (hidden at first) -->
+                <div class="col-md-4 project-item d-none">
+                    <div class="card bg-dark text-white shadow-lg h-100">
+                        <img src="p6.png" class="card-img-top" alt="Project 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Another Project</h5>
+                            <p class="card-text text-white-50">
+                                Extra project details here.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- See All Button -->
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-light" id="seeMoreBtn">See All Projects</button>
             </div>
         </div>
     </section>
 
     <section class="py-5" id="Skills">
         <div class="container">
-            <h2 class="fw-bold text-center mb-3 gradient-name">Skills & Services</h2>
-            <p class="text-center text-white-50 mb-5">Technologies I work with and services I offer to bring your ideas to
-                life</p>
+            <h2 class="fw-bold text-center mb-3 gradient-name" data-aos="fade-down">Skills & Services</h2>
+            <p class="text-center text-white-50 mb-5" data-aos="fade-up">
+                Technologies I work with and services I offer to bring your ideas to life
+            </p>
             <div class="row g-4 justify-content-center">
 
                 <!-- Frontend Development -->
-                <div class="col-md-4">
-                    <div class="card bg-dark text-white p-4 h-100">
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="cards bg-dark text-white p-4 h-100 text-center">
                         <div class="mb-3">
-                            <i class="bi bi-code-slash fs-2"></i> <!-- Bootstrap icon -->
+                            <i class="bi bi-code-slash fs-2"></i>
                         </div>
-                        <h5 class="card-title mb-3">Frontend Development</h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge bg-secondary">HTML</span>
-                            <span class="badge bg-secondary">CSS</span>
-                            <span class="badge bg-secondary">JavaScript</span>
-                            <span class="badge bg-secondary">Bootstrap</span>
-                            <span class="badge bg-secondary">Blade</span>
+                        <h5 class="card-title mb-3">Frontend</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 fs-1">
+                            <i class="fab fa-html5 text-danger"></i>
+                            <i class="fab fa-css3-alt text-primary"></i>
+                            <i class="fab fa-js text-warning"></i>
+                            <i class="fab fa-bootstrap text-purple"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- Backend Development -->
-                <div class="col-md-4">
-                    <div class="card bg-dark text-white p-4 h-100">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="cards bg-dark text-white p-4 h-100 text-center">
                         <div class="mb-3">
                             <i class="bi bi-server fs-2"></i>
                         </div>
-                        <h5 class="card-title mb-3">Backend Development</h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge bg-secondary">PHP / Laravel</span>
-                            <span class="badge bg-secondary">Node.js</span>
-                            <span class="badge bg-secondary">Python</span>
-                            <span class="badge bg-secondary">MySQL</span>
-                            <span class="badge bg-secondary">Firebase</span>
+                        <h5 class="card-title mb-3">Backend</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 fs-1">
+                            <i class="fab fa-php text-primary"></i>
+                            <i class="fab fa-laravel text-danger"></i>
+                            <i class="fab fa-node text-success"></i>
+                            <i class="fab fa-python text-info"></i>
+                            <i class="fas fa-database text-warning"></i>
                         </div>
                     </div>
                 </div>
 
-                <!-- Optional: Mobile Development -->
-                <div class="col-md-4">
-                    <div class="card bg-dark text-white p-4 h-100">
+                <!-- UI/UX Design -->
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="cards bg-dark text-white p-4 h-100 text-center">
                         <div class="mb-3">
-                            <i class="bi bi-phone fs-2"></i>
+                            <i class="bi bi-brush fs-2"></i>
                         </div>
-                        <h5 class="card-title mb-3">Mobile Development</h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge bg-secondary">React Native</span>
-                            <span class="badge bg-secondary">Flutter</span>
-                            <span class="badge bg-secondary">iOS</span>
-                            <span class="badge bg-secondary">Android</span>
+                        <h5 class="card-title mb-3">UI / UX Design</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 fs-1">
+                            <i class="fab fa-figma text-pink"></i>
+                            <i class="fab fa-sketch text-warning"></i>
+                            <i class="fab fa-adobe text-danger"></i>
                         </div>
                     </div>
                 </div>
 
+                <!-- Tools -->
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="cards bg-dark text-white p-4 h-100 text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-tools fs-2"></i>
+                        </div>
+                        <h5 class="card-title mb-3">Tools</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 fs-1">
+                            <i class="fab fa-github text-light"></i>
+                            <i class="fas fa-code text-info"></i> <!-- VS Code -->
+                            <i class="fab fa-git-alt text-warning"></i>
+                            <i class="fab fa-npm text-danger"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-
-
-
 
 
     <!-- Bootstrap JS (with Popper for dropdowns, tooltips, etc.) -->
@@ -281,6 +363,24 @@
             duration: 1000,
             once: false
         });
+
+        const seeMoreBtn = document.getElementById("seeMoreBtn");
+        const hiddenProjects = document.querySelectorAll(".project-item.d-none");
+
+        let expanded = false;
+
+        seeMoreBtn.addEventListener("click", () => {
+            if (!expanded) {
+                hiddenProjects.forEach(project => project.classList.remove("d-none"));
+                seeMoreBtn.textContent = "See Less";
+                expanded = true;
+            } else {
+                hiddenProjects.forEach(project => project.classList.add("d-none"));
+                seeMoreBtn.textContent = "See All";
+                expanded = false;
+            }
+        });
+
     </script>
 
 </body>
