@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Certificates">Certificates</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                 </ul>
                 <a class="btn btn-talk ms-lg-3" href="#">Let's Talk</a>
@@ -280,7 +280,7 @@
 
     <section class="py-5" id="Skills">
         <div class="container">
-            <h2 class="fw-bold text-center mb-3 gradient-name" data-aos="fade-down">Skills & Services</h2>
+            <h2 class="fw-bold text-center mb-3 gradient-name">Skills & Services</h2>
             <p class="text-center text-white-50 mb-5" data-aos="fade-up">
                 Technologies I work with and services I offer to bring your ideas to life
             </p>
@@ -353,6 +353,88 @@
         </div>
     </section>
 
+    <section class="py-5" id="Certificates">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-3 gradient-name">Certificates</h2>
+
+            <!-- First Row (3 Certificates) -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="cardes shadow-sm h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="c1.png" alt="Certificate 1" class="img-fluid rounded mb-3">
+                            <h5 class="card-title">Cybersecurity Certificate</h5>
+                            <p class="card-text">Recognized for excellence in cybersecurity awareness and practices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cardes shadow-sm h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="c2.png" alt="Certificate 2" class="img-fluid rounded mb-3">
+                            <h5 class="card-title">Web Development Certificate</h5>
+                            <p class="card-text">Awarded for completing a full-stack web development course.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cardes shadow-sm h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="c3.png" alt="Certificate 3" class="img-fluid rounded mb-3">
+                            <h5 class="card-title">Data Science Certificate</h5>
+                            <p class="card-text">Completed training in data analysis and machine learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row (2 Certificates) -->
+            <div class="row g-4 justify-content-center d-none" id="moreCertificates">
+                <div class="col-md-4">
+                    <div class="cardes shadow-sm h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="c4.png" alt="Certificate 4" class="img-fluid rounded mb-3">
+                            <h5 class="card-title">Mobile App Development</h5>
+                            <p class="card-text">Recognized for excellence in mobile app creation and design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cardes shadow-sm h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="c5.png" alt="Certificate 5" class="img-fluid rounded mb-3">
+                            <h5 class="card-title">Cloud Computing Certificate</h5>
+                            <p class="card-text">Completed certification in cloud services and deployment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cardes shadow-sm h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="c7.png" alt="Certificate 5" class="img-fluid rounded mb-3">
+                            <h5 class="card-title">Cloud Computing Certificate</h5>
+                            <p class="card-text">Completed certification in cloud services and deployment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cardes shadow-sm h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="c6.png" alt="Certificate 5" class="img-fluid rounded mb-3">
+                            <h5 class="card-title">Cloud Computing Certificate</h5>
+                            <p class="card-text">Completed certification in cloud services and deployment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-light" id="seeMore">See All Certificates</button>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Bootstrap JS (with Popper for dropdowns, tooltips, etc.) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -378,6 +460,19 @@
                 hiddenProjects.forEach(project => project.classList.add("d-none"));
                 seeMoreBtn.textContent = "See All";
                 expanded = false;
+            }
+        });
+
+        const seeMore = document.getElementById("seeMore");
+        const moreCertificates = document.getElementById("moreCertificates");
+
+        seeMore.addEventListener("click", () => {
+            moreCertificates.classList.toggle("d-none");
+
+            if (moreCertificates.classList.contains("d-none")) {
+                seeMore.textContent = "See All Certificates";
+            } else {
+                seeMore.textContent = "See Less";
             }
         });
 

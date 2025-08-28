@@ -148,7 +148,6 @@ html{
   object-fit: cover;      
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 5rem;
   transition: transform 0.4s ease; /
 }
 
