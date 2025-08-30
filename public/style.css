@@ -184,3 +184,7 @@ html{
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
+
+#About, #Skills{
+  min-height: 100vh;
+}
