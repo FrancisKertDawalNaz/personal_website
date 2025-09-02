@@ -1,21 +1,21 @@
-Personal Website
-Overview
+🌐 Personal Website
+📖 Overview
 
-This is the personal website of Francis Kert Dawal. It serves as an online portfolio showcasing projects, skills, and contact information. The website is designed to be modern, responsive, and user-friendly.
+This is the personal portfolio website of Francis Kert Dawal, created to showcase projects, skills, and contact information. The site is built with a modern, responsive, and user-friendly design that works seamlessly across devices.
 
-Features
+✨ Features
 
-Portfolio Section – Showcases personal projects with descriptions and links.
+Portfolio Section – Highlights personal projects with descriptions and direct links.
 
-About Section – Information about skills, experience, and background.
+About Section – Shares details about skills, experience, and background.
 
-Contact Form – Allows visitors to send messages directly.
+Contact Form – Enables visitors to send messages directly.
 
-Responsive Design – Works on desktop, tablet, and mobile devices.
+Responsive Layout – Optimized for desktop, tablet, and mobile.
 
-Interactive Elements – Smooth scrolling, hover effects, and animations.
+Interactive UI – Includes smooth scrolling, hover effects, and subtle animations.
 
-Technologies Used
+🛠️ Technologies Used
 
 HTML5
 
@@ -25,34 +25,39 @@ JavaScript
 
 Firebase (optional, for hosting or backend features)
 
-Installation
+🚀 Installation
 
 To run this website locally:
 
-Clone the repository:
+# Clone the repository
+git clone https://github.com/FrancisKertDawalNaz/personal_website.git  
 
-git clone https://github.com/FrancisKertDawalNaz/personal_website.git
-
-
-Navigate to the project folder:
-
+# Navigate to the project folder
 cd personal_website
 
 
-Open index.html in your preferred browser.
+Then, open index.html in your preferred browser.
 
-Usage
+🎯 Usage
 
-View the portfolio projects
+Browse showcased projects in the Portfolio section.
 
-Contact me using the form
+Learn more in the About section.
 
-Navigate through sections using the menu
+Get in touch using the Contact Form.
 
-Deployment
+Navigate easily through sections via the site menu.
 
-The website can be hosted using GitHub Pages, Firebase Hosting, or any static web host.
+🌍 Deployment
 
-License
+The website can be deployed using:
+
+GitHub Pages
+
+Firebase Hosting
+
+Any static web hosting service
+
+📜 License
 
 This project is licensed under the MIT License.
